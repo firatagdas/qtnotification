@@ -1,0 +1,4 @@
+module QtPushNotification
+plugin declarative_pushnotification
+typeinfo plugins.qmltypes
+classname QPushNotificationModule
