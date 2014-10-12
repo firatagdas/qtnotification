@@ -18,7 +18,7 @@ public class QtGcmBroadcastReceiver extends WakefulBroadcastReceiver
 
     public void unregisterReceiver()
     {
-        if (QtPushNotification.m_activity != null)
-            QtPushNotification.m_activity.unregisterReceiver(this);
+        if (QtNotification.m_activity != null)
+            QtNotification.m_activity.unregisterReceiver(this);
     }
 }

@@ -1,11 +1,11 @@
-CXX_MODULE = pushnotification
-TARGET = declarative_pushnotification
-TARGETPATH = QtPushNotification
+CXX_MODULE = notification
+TARGET = declarative_notification
+TARGETPATH = QtNotification
 IMPORT_VERSION = 1.0
 
-QT += qml quick pushnotification pushnotification-private
+QT += qml quick notification notification-private
 SOURCES += \
-    $$PWD/pushnotification.cpp
+    $$PWD/notification.cpp
 
 load(qml_plugin)
 

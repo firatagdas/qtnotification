@@ -1,3 +1,3 @@
 TEMPLATE = subdirs
-SUBDIRS += pushnotification imports
+SUBDIRS += notification imports
 android: SUBDIRS += jar

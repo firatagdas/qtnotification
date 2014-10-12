@@ -12,7 +12,7 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import java.io.IOException;
 
-public class QtPushNotification
+public class QtNotification
 {
     private static final String GCM_REGISTER_ID = "registration_id";
     private static final String GCM_APP_VERSION = "appVersion";
@@ -22,7 +22,7 @@ public class QtPushNotification
 
     private GoogleCloudMessaging m_googleCloudMessaging;
 
-    public QtPushNotification()
+    public QtNotification()
     {
         if (m_activity == null)
             return;
@@ -35,9 +35,8 @@ public class QtPushNotification
     {
         int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(m_activity.getApplicationContext());
         if (resultCode != ConnectionResult.SUCCESS) {
-            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)) {
+            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode))
                 GooglePlayServicesUtil.getErrorDialog(resultCode, m_activity, 9000).show();
-            }
 
             return false;
         }
@@ -72,9 +71,8 @@ public class QtPushNotification
         if (!registerId.isEmpty()) {
             int registeredVersion = preferences.getInt(GCM_APP_VERSION, Integer.MIN_VALUE);
             int currentVersion = getAppVersion();
-            if (registeredVersion == currentVersion) {
+            if (registeredVersion == currentVersion)
                 gotRegisterId = true;
-            }
         }
 
         if (!gotRegisterId) {

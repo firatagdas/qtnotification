@@ -1,5 +1,5 @@
 %modules = ( # path to module name map
-    "QtPushNotification" => "$basedir/src/pushnotification",
+    "QtNotification" => "$basedir/src/notification",
 );
 %moduleheaders = ( # restrict the module headers to those found in relative path
 );

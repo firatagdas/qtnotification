@@ -13,7 +13,7 @@ JAVACLASSPATH += \
 JAVACLASSPATH += $$PWD/src
 
 JAVASOURCES += \
-    $$PWD/src/org/qtproject/qt5/android/QtPushNotification.java \
+    $$PWD/src/org/qtproject/qt5/android/QtNotification.java \
     $$PWD/src/org/qtproject/qt5/android/QtGcmBroadcastReceiver.java \
     $$PWD/src/org/qtproject/qt5/android/QtGcmIntentService.java
 

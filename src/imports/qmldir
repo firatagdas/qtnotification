@@ -1,4 +1,4 @@
-module QtPushNotification
-plugin declarative_pushnotification
+module QtNotification
+plugin declarative_notification
 typeinfo plugins.qmltypes
-classname QPushNotificationModule
+classname QNotificationModule

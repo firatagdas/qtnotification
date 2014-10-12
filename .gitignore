@@ -29,4 +29,6 @@
 
 .DS_Store
 *.user
+.idea/
+*.iml
 

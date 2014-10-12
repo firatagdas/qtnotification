@@ -1,3 +1,3 @@
-TARGET = QtAndroidPushNotification-bundled
+TARGET = QtAndroidNotification-bundled
 CONFIG += bundled_jar_file
 include(jar.pri)

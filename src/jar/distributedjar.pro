@@ -1,2 +1,2 @@
-TARGET = QtAndroidPushNotification
+TARGET = QtAndroidNotification
 include(jar.pri)
