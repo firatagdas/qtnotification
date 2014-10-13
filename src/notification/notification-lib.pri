@@ -17,9 +17,13 @@ PRIVATE_HEADERS += \
 android {
     QT += androidextras
 
+    PRIVATE_HEADERS += \
+        qnotification_android_p.h
+
     SOURCES += \
         qnotification.cpp \
-        qnotificationparams.cpp
+        qnotificationparams.cpp \
+        qnotification_android_p.cpp
 }
 
 HEADERS += $$PUBLIC_HEADERS $$PRIVATE_HEADERS

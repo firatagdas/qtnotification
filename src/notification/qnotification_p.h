@@ -15,9 +15,9 @@ public:
     QNotificationPrivate(QNotification *q);
     ~QNotificationPrivate();
 
-    void registerId();
-    bool supported() const;
-    void send(const QNotificationParams &params);
+    virtual void registerId() = 0;
+    virtual bool supported() const = 0;
+    virtual void send(const QNotificationParams &params) = 0;
 
     static QNotificationPrivate *createInstance(QNotification *q);
 

@@ -14,8 +14,9 @@ public:
     QNotificationPrivateDefault(QNotification *q);
     virtual ~QNotificationPrivateDefault();
 
-    void setSenderId(const QString &senderId);
-    QString senderId() const;
+    void registerId();
+    bool supported() const;
+    void send(const QNotificationParams &params);
 };
 
 QT_END_NAMESPACE

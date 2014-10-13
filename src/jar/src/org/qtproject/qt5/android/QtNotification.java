@@ -18,14 +18,16 @@ public class QtNotification
     private static final String GCM_APP_VERSION = "appVersion";
 
     public static Activity m_activity;
-    public static long m_delegate;
+    public long m_delegate;
 
     private GoogleCloudMessaging m_googleCloudMessaging;
 
-    public QtNotification()
+    public QtNotification(long delegate)
     {
         if (m_activity == null)
             return;
+
+        m_delegate = delegate;
 
         if (checkPlayService())
             m_googleCloudMessaging = GoogleCloudMessaging.getInstance(m_activity);
