@@ -4,7 +4,7 @@
 #include "qnotification_p.h"
 #include <QtAndroidExtras>
 
-class QAndroidNotificationPrivate : QNotificationPrivate
+class QAndroidNotificationPrivate : public QNotificationPrivate
 {
     Q_OBJECT
 public:

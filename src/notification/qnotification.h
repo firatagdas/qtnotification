@@ -5,8 +5,11 @@
 #include "qnotification_global.h"
 #include "qnotification_p.h"
 #include "qnotificationparams.h"
+#include <QMessageLogger>
 
 QT_BEGIN_NAMESPACE
+
+Q_DECLARE_LOGGING_CATEGORY(QtNotificationLogging)
 
 class Q_NOTIFICATION_EXPORT QNotification : public QObject
 {

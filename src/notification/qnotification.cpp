@@ -1,6 +1,8 @@
 #include "qnotification_p.h"
 #include "qnotification.h"
 
+Q_LOGGING_CATEGORY(QtNotificationLogging, "QtNotification")
+
 QNotificationPrivate::QNotificationPrivate(QNotification *q)
     : QObject(0), q_ptr(q)
 {
